@@ -1,11 +1,6 @@
 import styled from "styled-components/native";
 import { COLORS, FONTS, SIZES } from "../../constants";
 
-export const Container = styled.View`
-  flex: 1;
-  background-color: ${COLORS.primary};
-`;
-
 export const Content = styled.View`
   flex: 1;
   padding-right: ${SIZES.radius}px;
