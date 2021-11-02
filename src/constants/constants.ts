@@ -8,6 +8,14 @@ const screens = {
   my_wallet: "My Wallet",
 };
 
+const tabs = {
+  home: "Home",
+  search: "Search",
+  cart: "Cart",
+  favorite: "Favorite",
+  notification: "Notification",
+};
+
 const bottom_tabs = [
   {
     id: 0,
@@ -110,4 +118,5 @@ export default {
   delivery_time,
   ratings,
   tags,
+  tabs,
 };

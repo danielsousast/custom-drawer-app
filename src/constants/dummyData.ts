@@ -2,7 +2,9 @@ import { icons, images } from ".";
 
 const myProfile = {
   name: "Daniel Sousa",
-  profile_image: images.profile,
+  profile_image: {
+    uri: "https://avatars.githubusercontent.com/u/15719314?s=400&u=d0bff8e57634cc82563fe7629b3d98327d8",
+  },
   address: "No. 88, Jln Padungan, Kuching",
 };
 

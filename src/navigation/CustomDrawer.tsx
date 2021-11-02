@@ -12,6 +12,7 @@ import CustomDrawerContent from "../components/CustomDrawerContent";
 import { COLORS } from "../constants";
 
 const CustomDrawer: React.FC = () => {
+  const [selectedTab, setSelectedTab] = React.useState();
   function getDrawerAnimation(progress) {
     const scale = Animated.interpolateNode(progress, {
       inputRange: [0, 1],
@@ -55,7 +56,12 @@ const CustomDrawer: React.FC = () => {
       >
         <Screen name="MainLayout">
           {(props) => (
-            <MainLayout {...props} getDrawerAnimation={getDrawerAnimation} />
+            <MainLayout
+              {...props}
+              getDrawerAnimation={getDrawerAnimation}
+              selectedTab={selectedTab}
+              setSelectedTab={setSelectedTab}
+            />
           )}
         </Screen>
       </Navigator>
